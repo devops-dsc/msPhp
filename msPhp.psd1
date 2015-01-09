@@ -1,5 +1,5 @@
 #
-# Module manifest for module 'xPhp'
+# Module manifest for module 'msPhp'
 #
 #
 # Generated on: 6/23/2014
