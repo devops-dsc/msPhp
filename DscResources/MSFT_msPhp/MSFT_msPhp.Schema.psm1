@@ -22,7 +22,7 @@ param
 }
 
 # Composite configuration to install PHP on IIS
-configuration xPhp
+configuration Php
 {
     param(
         [Parameter(Mandatory = $true)]
