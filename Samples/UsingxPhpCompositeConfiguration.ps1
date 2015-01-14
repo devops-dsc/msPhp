@@ -1,4 +1,4 @@
-# This configuration will, via the xPHP composite configuration:
+# This configuration will, via the msPhp composite configuration:
 # 1) Make sure IIS is installed
 # 2) Make sure PHP is present
 # 3) Make sure that PHP is registered with IIS
@@ -20,7 +20,7 @@ if (-not (Test-Path $phpIniPath))
 Configuration SamplePhp
 {
     # Import composite resources
-    Import-DscResource -module xPhp
+    Import-DscResource -module msPhp
 
     Node "localhost"
     {
@@ -33,7 +33,7 @@ Configuration SamplePhp
         }
 
         # Make sure PHP is installed in IIS
-        xPhp  php
+        msPhp  php
         {
             InstallMySqlExt = $true
             PackageFolder =  "C:\package"
